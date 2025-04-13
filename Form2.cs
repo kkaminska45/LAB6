@@ -26,12 +26,12 @@ namespace LAB6
 
         private void btnZapiszUstawienia_Click(object sender, EventArgs e)
         {
-            int rows = (int)comboBoxX.SelectedItem;
-            int columns = (int)comboBoxY.SelectedItem;
+            int rows = int.Parse(comboBoxX.SelectedItem.ToString());
             string time = textBoxUstawieniaCzas.Text;
-            int dydelfy = (int)comboBoxDydelfy.SelectedItem;
-            int szopy = (int)comboBoxSzopy.SelectedItem;
-            int krokodyle = (int)comboBoxKrokodyle.SelectedItem;
+            int columns = int.Parse(comboBoxY.SelectedItem.ToString());
+            int dydelfy = int.Parse(comboBoxDydelfy.SelectedItem.ToString());
+            int szopy = int.Parse(comboBoxSzopy.SelectedItem.ToString());
+            int krokodyle = int.Parse(comboBoxKrokodyle.SelectedItem.ToString());
 
             glowneOkno.PrzekazUstawienia(rows, columns, time, dydelfy, szopy, krokodyle);
 

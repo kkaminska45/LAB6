@@ -33,5 +33,10 @@ namespace LAB6
             this.krokodyle = krokodyle;
             this.time = czas;
         }
+
+        private void btnKONIEC_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

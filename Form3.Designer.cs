@@ -28,36 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            tableLayoutPanel1 = new TableLayoutPanel();
+            label1 = new Label();
             SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // label1
             // 
-            tableLayoutPanel1.ColumnCount = 2;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Location = new Point(108, 92);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 2;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Size = new Size(250, 125);
-            tableLayoutPanel1.TabIndex = 0;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            label1.Location = new Point(502, 48);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 38);
+            label1.TabIndex = 1;
             // 
             // FormGra
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(tableLayoutPanel1);
+            ClientSize = new Size(596, 536);
+            Controls.Add(label1);
             Name = "FormGra";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Plansza";
             Load += FormGra_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private TableLayoutPanel tableLayoutPanel1;
+        private Label label1;
     }
 }
